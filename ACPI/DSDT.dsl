@@ -12915,7 +12915,15 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
                     Return ("ELAN0501")
                 }
             }
-
+            Name (SBFG, ResourceTemplate ()
+            {
+                GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
+                    "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
+                    )
+                    {   // Pin list
+                    0x003A
+                    }
+            })
             Name (_CID, "PNP0C50")  // _CID: Compatible ID
             Name (_UID, One)  // _UID: Unique ID
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
@@ -12980,18 +12988,14 @@ DefinitionBlock ("", "DSDT", 2, "ACRSYS", "ACRPRDCT", 0x00000000)
 
             Method (_CRS, 0, Serialized)  // _CRS: Current Resource Settings
             {
-                Name (SBFI, ResourceTemplate ()
+                Name (SBFB, ResourceTemplate ()
                 {
                     I2cSerialBusV2 (0x0015, ControllerInitiated, 0x00061A80,
                         AddressingMode7Bit, "\\_SB.PCI0.I2C0",
                         0x00, ResourceConsumer, , Exclusive,
                         )
-                    Interrupt (ResourceConsumer, Edge, ActiveLow, Exclusive, ,, )
-                    {
-                        0x00000052,
-                    }
                 })
-                Return (SBFI)
+                Return (ConcatenateResTemplate (SBFB, SBFG))
             }
         }
     }
