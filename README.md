@@ -1,6 +1,6 @@
 # Acer E5-575G-39M5 Hackintosh Project
 
-![](https://i.imgur.com/atNiEbh.jpg)
+![](https://i.imgur.com/UOIFIbU.jpg)
 
 **Heavy work in progress going here**
 
