@@ -88,7 +88,7 @@ It would be for the best, if you'd use the [full guide](https://voodooi2c.github
 
 
 
-
+X. Enable dragging with drag lock in Accessibily settings to enable dragging with tapping.
 ### Card reader
 1. Download Sintek's kext
 2. Install kext to L/E using your favorite way.
