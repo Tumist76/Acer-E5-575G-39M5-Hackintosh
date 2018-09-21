@@ -16,7 +16,6 @@ This is my first hackintosh and though it required a decent time commitment, I t
 
 ## Software you'll need
 * [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
-* 
 ## Kexts you'll need
 
 * [FakeSMC.kext](https://github.com/RehabMan/OS-X-FakeSMC-kozlek)
@@ -108,4 +107,3 @@ X. Enable dragging with drag lock in Accessibily settings to enable dragging wit
 ### References
 * [Sierra booting and installation guide](https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/)
 * [VoodooPS2Controller.kext install guide](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller/wiki/How-to-Install)
-* 
