@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>17E202</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleGetInfoString</key>
+	<string>6.3.30-2 Copyright © 2007-2018 WACOM Technology</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.wacom.kext.wacomtablet</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>Wacom Tablet 6.3.30-2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>6.3.30</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>9E501</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>17E189</string>
+	<key>DTSDKName</key>
+	<string>macosx10.13</string>
+	<key>DTXcode</key>
+	<string>0931</string>
+	<key>DTXcodeBuild</key>
+	<string>9E501</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>Tablet</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.wacom.kext.wacomtablet</string>
+			<key>HIDDefaultBehavior</key>
+			<string></string>
+			<key>IOClass</key>
+			<string>IOHIDEventDriver</string>
+			<key>IOProviderClass</key>
+			<string>IOHIDInterface</string>
+			<key>IOUserClientClass</key>
+			<string>IOHIDEventServiceUserClient</string>
+			<key>SupportsInk</key>
+			<integer>1</integer>
+			<key>VendorID</key>
+			<integer>1386</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>
